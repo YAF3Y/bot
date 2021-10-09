@@ -32,12 +32,12 @@
         "BG_IMAGE": {
             "description": "خلــفية",
             "required": false,
-            "value": "https://telegra.ph/file/6d31d6b18722ce94521cb.jpg"
+            "value": "https://telegra.ph/file/11fb9881a34e73137703b.jpg"
         },
         "THUMB_IMG": {
             "description": "سيبــها زي مهي عادي يبا -> bg_image",
             "required": false,
-            "value": "https://telegra.ph/file/6d31d6b18722ce94521cb.jpg"
+            "value": "https://telegra.ph/file/11fb9881a34e73137703b.jpg"
         },
         "OWNER_NAME": {
             "description": "حط يوزركـــ منغــير -> @",
@@ -53,7 +53,7 @@
             "required": true
         },
         "SUDO_USERS": {
-            "description": "يوزر المطور",
+            "description": "ايدي المطور",
             "required": true
         },
         "DURATION_LIMIT": {
