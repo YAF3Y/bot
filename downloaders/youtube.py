@@ -18,12 +18,12 @@ def download(url: str) -> str:
     duration = round(info["duration"] / 120)
     if duration > DURATION_LIMIT:
         raise DurationLimitError(
-            f"✘ ᴠɪᴅᴇᴏs ʟᴏɴɢᴇʀ ᴛʜᴀɴ {DURATION_LIMIT} ᴍɪɴᴜᴛᴇ(s) ᴀʀᴇɴ'ᴛ ᴀʟʟᴏᴡᴇᴅ, ᴛʜᴇ ᴘʀᴏᴠɪᴅᴇᴅ ᴠɪᴅᴇᴏ ɪs {duration} ᴍɪɴᴜᴛᴇ(s)"
+            f"✘ مقاطع الفيديو التي تزيد مدتها عن {DURATION_LIMIT} دقيقة (s) غير مسموح بها ، ومقطع الفيديو المقدم هو {duration} دقيقة (s)"
         )
     try:
         ydl.download([url])
     except:
         raise DurationLimitError(
-            f"✘ ᴠɪᴅᴇᴏs ʟᴏɴɢᴇʀ ᴛʜᴀɴ {DURATION_LIMIT} ᴍɪɴᴜᴛᴇ(s) ᴀʀᴇɴ'ᴛ ᴀʟʟᴏᴡᴇᴅ, ᴛʜᴇ ᴘʀᴏᴠɪᴅᴇᴅ ᴠɪᴅᴇᴏ ɪs {duration} ᴍɪɴᴜᴛᴇ(s)"
+            f"✘ مقاطع الفيديو التي تزيد مدتها عن {DURATION_LIMIT} دقيقة (s) غير مسموح بها ، ومقطع الفيديو المقدم هو {duration} دقيقة (s)"
         )
     return path.join("downloads", f"{info['id']}.{info['ext']}")
