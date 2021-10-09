@@ -11,7 +11,7 @@ async def songs(client, message):
             await message.reply_text("✘ **sᴏɴɢ ɴᴏᴛ ғᴏᴜɴᴅ.**\n\n**ᴘʟᴇᴀsᴇ ɢɪᴠᴇ ᴀ ᴠᴀʟɪᴅ sᴏɴɢ ɴᴀᴍᴇ.**")
             return
         text = message.text.split(None, 1)[1]
-        results = await veez.get_inline_bot_results(1510678973, f"music {text}")
+        results = await veez.get_inline_bot_results(879123322, f"music {text}")
         await veez.send_inline_bot_result(
             message.chat.id, results.query_id, results.results[0].id
         )
