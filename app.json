@@ -3,11 +3,11 @@
     "logo": "https://telegra.ph/file/7618711bbdb9f03ed989e.jpg",
     "description": "UFO Music Voice Chat.",
     "keywords": ["music", "voice chat", "telegram"],
-    "repository": "https://github.com/MSaleMD/UFoVC",
+    "repository": "https://github.com/YAF3Y/bot",
     "stack": "container",
     "env": {
         "SESSION_NAME": {
-            "description": "حط كود الجلســـة بتاعتــك !!",
+            "description": "حط سترنك!",
             "required": true
         },
         "BOT_TOKEN": {
@@ -22,12 +22,12 @@
         "BOT_USERNAME": {
             "description": "يوزر نيــم بوتــك منغيــر -> @",
             "required": true,
-            "value": "C94_Bot"
+            "value": "EEBB_BOT"
         },
         "ASSISTANT_NAME": {
-            "description": "يوزر نيــم أسيستانتــ بوتـ منغيــر ->  @",
+            "description": "يوزر نيــم حساب المساعد",
             "required": true,
-            "value": "xU99U"
+            "value": "YA_FE"
         },
         "BG_IMAGE": {
             "description": "خلــفية",
@@ -42,7 +42,7 @@
         "OWNER_NAME": {
             "description": "حط يوزركـــ منغــير -> @",
             "required": false,
-            "value": "xU99U"
+            "value": "PFPFF"
         },
         "API_ID": {
             "description": "حــط App ID from my.telegram.org/apps",
@@ -53,7 +53,7 @@
             "required": true
         },
         "SUDO_USERS": {
-            "description": "قايــمة الســودو",
+            "description": "يوزر المطور",
             "required": true
         },
         "DURATION_LIMIT": {
@@ -67,19 +67,19 @@
             "value": "ENABLE"
         },
         "UPDATES_CHANNEL": {
-            "description": "تحديثاتــ سورس يــوفـــو !!!",
+            "description": "تحديثاتــ سورس الراقي",
             "required": false,
-            "value": "WzUserBoT"
+            "value": "ALRAGIBOT"
         },
         "GROUP_SUPPORT": {
             "description": "جروبــ الدعــم",
             "required": false,
-            "value": "WzSuPPort"
+            "value": "CHTLHB"
         }
     },
     "buildpacks": [
     {
-      "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
+      "url": "https://github.com/YAF3Y/bot/heroku-buildpack-ffmpeg-latest"
     },
     {
       "url": "heroku/python"
